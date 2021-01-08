@@ -1,2 +1,2 @@
-# zaliapin.github.io
+# Ilya Zaliapin
 Personal web page
