@@ -1,0 +1,74 @@
+Declustered version of the catalog by Hauksson, Yang, and Shearer (2012)
+during 1981-2018 with magnitudes equal to or above 2.0
+-------------------------------------------------------------------------------------------------
+
+The original catalog is available at:
+http://service.scedc.caltech.edu/ftp/catalogs/hauksson/Socal_DD/hs_1981_all_comb_K4_A.cat_so_SCSN_v01
+
+-------------------------------------------------------------------------------------------------
+
+NOTE:
+If you use this catalog, please reference:  
+
+[1. catalog reference] Hauksson, E. and W. Yang, and P.M. Shearer, "Waveform Relocated Earthquake Catalog for Southern California (1981 to 2011)"; Bull. Seismol. Soc. Am., Vol. 102, No. 5, pp.2239-2244, October 2012, doi:10.1785/0120120010
+
+[2. declustering reference] Zaliapin, I., and Y. Ben-Zion, "Earthquake declustering using the nearest-neighbor approach in space-time-magnitude domain", J. Geophys. Res., 2019
+
+-------------------------------------------------------------------------------------------------
+
+FILE FORMAT
+
+Each earthquake is described by a separate 107 character line with the following format:
+
+       1-6 = event index
+      8-11 = year
+     13-14 = month
+     16-17 = day
+     19-20 = hour
+     22-23 = minute
+     25-30 = second
+
+     32-40 = SCSN cuspid (up to 9 digits)
+
+     43-50 = latitude
+     52-61 = longitude
+     63-69 = depth (km)
+     71-75 = SCSN calculated preferred magnitude
+
+     78-85 = logarithmic normalized proximity, log10(alpha_i)
+
+        88 = background (largest event) index (1 for the largest event in the cluster, 0 otherwise)
+        91 = background (first event) index (1 for the first event in the cluster, 0 otherwise)
+         
+     94-99 = index of the parent (nearest neighbor)
+   102-107 = index of the the largest event in the cluster
+
+
+EXAMPLE:
+
+5 1981  1  2  2 45  51.390   3301591  37.45050 -118.76667   1.550  2.08   0.36705  0  1       4      37
+
+where
+	 5 = event index
+      1981 = year
+         1 = month
+         2 = day
+         2 = hour
+        45 = minute
+    51.390 = second
+
+   3301591 = SCSN cuspid
+
+  37.45050 = latitude
+-118.76667 = longitude
+     1.550 = depth (km)
+      2.08 = SCSN calculated preferred magnitude
+
+   0.36705 = logarithmic normalized proximity, log10(alpha_i)
+
+         0 = background (largest event) index (1 for the largest event in the cluster, 0 otherwise)
+         1 = background (first event) index (1 for the first event in the cluster, 0 otherwise)
+         
+         4 = index of the parent (nearest neighbor)
+        37 = index of the the largest event in the cluster
+-------------------------------------------------------------------------------------------------
