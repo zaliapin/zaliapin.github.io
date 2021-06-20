@@ -14,14 +14,23 @@ h3 {
     margin-bottom: 5px;
 }
 
+figure { align-items: center;
+  float: center;
+  width: 60%;
+  text-align: justify;
+  font-style: italic;
+  font-size: normal;
+  text-indent: 0;
+}
+
 .vl {
     height:50px;
     float:left;
     border: 1px solid ghostwhite;
 }
 
-.vll {
-    height:90px;
+.vl0 {
+    height:10px;
     float:left;
     border: 1px solid ghostwhite;
 }
